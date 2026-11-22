@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="blue gradient glass header">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E40AF"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <radialGradient id="orbA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#DBEAFE" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#DBEAFE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E0F2FE" stop-opacity="0.50"/>
+      <stop offset="1" stop-color="#E0F2FE" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.30" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="0.62" stop-color="#FFFFFF" stop-opacity="0.40"/>
+      <stop offset="0.88" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask">
+      <rect width="1200" height="110" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#fadeMask)">
+    <rect width="1200" height="110" fill="url(#base)"/>
+    <circle cx="230" cy="0" r="180" fill="url(#orbA)"/>
+    <circle cx="940" cy="20" r="210" fill="url(#orbB)"/>
+  </g>
+</svg>
